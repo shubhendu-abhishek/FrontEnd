@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-column-gap: 1em;
+        }
+
+        .one {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }
+
+        @media only screen and (max-width: 720px) {
+            .wrapper {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-column-gap: 1em;
+                grid-row-gap: 1em;
+                border: 1px;
+                border-color: black;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .wrapper {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-column-gap: 1em;
+                grid-row-gap: 1em;
+                border: 1px;
+                border-color: black;
+            }
+        }
+
+        .wrapper>div {
+            background: #eeeeee;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="one">1</div>
+        <div class="one">2</div>
+        <div class="one">3</div>
+        <div class="one">4</div>
+    </div>
+</body>
+
+</html>
