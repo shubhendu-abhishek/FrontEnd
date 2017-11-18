@@ -10,13 +10,19 @@
         .wrapper {
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
-            grid-column-gap: 1em;
+            /* grid-column-gap: 1em; */
+            grid-gap: 1em;
         }
 
         .one {
             border-style: solid;
             border-width: 1px;
             border-color: black;
+        }
+
+        .wrapper>div {
+            background: #eeeeee;
+            padding: 1em;
         }
 
         @media only screen and (max-width: 720px) {
@@ -39,11 +45,6 @@
                 border: 1px;
                 border-color: black;
             }
-        }
-
-        .wrapper>div {
-            background: #eeeeee;
-            padding: 1em;
         }
     </style>
 </head>
