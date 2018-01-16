@@ -1,0 +1,22 @@
+
+/* CSS Position Property: Static,Relative,Absolute,Fixed,Initial */
+.comman{
+    font-size: 30px;
+    color: white;
+}
+.first{
+    background-color: green;
+}
+
+.second{
+    background-color: red;
+    position: relative;
+    left: 10px;
+}
+
+.third{
+    background-color: rgb(30, 42, 214);
+}
+
+/* Default position property is Static.Position don't interfear */
+/* If position is relative and if u are giving lent: right: top: 10px , it will give spage from origin. */
